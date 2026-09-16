@@ -506,11 +506,32 @@ body.light-theme .logo-card {
 }
 
 .project-placeholder {
+    height: 270px;
     min-height: 270px;
     display: grid;
     place-items: center;
     position: relative;
     overflow: hidden;
+}
+
+.project-placeholder img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-placeholder img {
+    transform: scale(1.04);
+}
+
+/* As fotos reais do portfólio substituem os brilhos dos placeholders. */
+.project-placeholder::before,
+.project-placeholder::after {
+    display: none;
 }
 
 .project-placeholder::before,

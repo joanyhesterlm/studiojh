@@ -90,7 +90,7 @@ budgetForm.addEventListener("submit", function (event) {
     // TROQUE PELO SEU NÚMERO.
     // Exemplo para Florianópolis:
     // 5548999999999
-    const phone = "5548988137086";
+    const phone = "5500000000000";
 
     const whatsappMessage =
         "Olá! Gostaria de solicitar um orçamento.%0A%0A" +
